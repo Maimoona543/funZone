@@ -12,7 +12,11 @@
   --font-mono: var(--font-geist-mono);
 }
 
-
+@media (max-width: 375px) {
+  .text-style {
+    font-size: 1rem; /* for example */
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -43,16 +47,14 @@ body {
 
 .transform-style-preserve-3d {
   transform-style: preserve-3d;
+  perspective: 1000px;
 }
-
 .backface-hidden {
   backface-visibility: hidden;
 }
-
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
-
 @keyframes scaleUp {
   from { transform: scale(0.8); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
@@ -68,4 +70,21 @@ background: linear-gradient(78deg, rgba(20, 18, 18, 1) 10%, rgba(2, 2, 64, 1) 10
 .btn-bg{
  background: #4f4d4d;
 background: linear-gradient(78deg, rgba(79, 77, 77, 1) 9%, rgba(8, 8, 20, 1) 78%);
+}
+ .white-shadow {
+  text-shadow: 0 0 10px #ffffff;
+}
+
+.movie-bg{
+background: #101021;
+background: linear-gradient(108deg, rgba(16, 16, 33, 1) 9%, rgba(3, 1, 74, 1) 84%);
+}
+
+
+.movie-box{
+  box-shadow: 0 0 2px #080575;
+}
+
+.card{
+  box-shadow: 0 30px 30px #1711CF;
 }
