@@ -1,6 +1,6 @@
 'use client'
 
-import React, { use, useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 
 const moviePage = () => {
    const [countries, setCountries] = useState<{ code: string; name: string }[]>(
