@@ -130,3 +130,5 @@ const handleReset = () => {
 }
 
 export default moviePage
+
+

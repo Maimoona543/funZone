@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 const MoviePage = () => {
-const [clues,setClues] = useState([
+const [clues ]= useState([
   {"title": "The Lion King", "clue": ["🦁", "👑"]},
   {"title": "Forrest Gump", "clue": ["🏃‍♂️", "🍫", "🪑"]},
   {"title": "Titanic", "clue": ["🚢", "❄️", "💔"]},
@@ -86,7 +86,6 @@ const [clues,setClues] = useState([
     } else {
       setFeedBack(`❌ Wrong! It was ${current.title}`);
     }
-
 
     // Submit → feedback shows → auto move after 10s.
       setTimeout(() => {
