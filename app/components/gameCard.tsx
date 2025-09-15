@@ -1,17 +1,30 @@
-import React from "react";
+'use client'
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 interface Props {
   title: string;
   description: string;
   id: string;
 }
 
+
 const GameCard = ({ title, description, id }: Props) => {
+
+  const videoRef  = useRef<HTMLVideoElement>(null)
+  
+  useEffect(() => {
+  if (videoRef.current) {
+    videoRef.current.playbackRate= 2.0;
+  }
+  })
+
+
   return (
 <div className="flex items-center flex-col sm:flex-row md:justify-between justify-center h-[70vh]  bg-custom bg-opacity-20 border border-gray-800 rounded-xl overflow-hidden">
       {/* Video Section */}
       <div className="flex items-center md:w-[50%] w-[90%] pl-3">
         <video
+        ref={videoRef}
           src={`/${title}.mp4`}
           autoPlay
           muted
