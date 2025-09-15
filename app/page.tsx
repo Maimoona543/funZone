@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import HomePage from "./HomePage/page";
 import GameCard from "./components/gameCard";
 

@@ -2,7 +2,7 @@
 
 import  { useEffect, useState } from 'react'
 
-const moviePage = () => {
+const WorldPage = () => {
    const [countries, setCountries] = useState<{ code: string; name: string }[]>(
     []
   );
@@ -129,6 +129,6 @@ const handleReset = () => {
 );
 }
 
-export default moviePage
+export default WorldPage
 
 
