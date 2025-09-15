@@ -52,4 +52,3 @@ export default function Home({ titles }: HomeProps) {
     </div>
   );
 }
-

@@ -1,5 +1,5 @@
 
-import HomePage from "./HomePage/page";
+import HomePage from "./HomePage/HomePage";
 import GameCard from "./components/gameCard";
 
 export default function Home() {
@@ -33,3 +33,4 @@ export default function Home() {
     </>
   );
 }
+
